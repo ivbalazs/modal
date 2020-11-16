@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <h2>Delete Modal</h2>
+
+  <button onclick="document.getElementById('id01').style.display='block'">Open Modal</button>
+
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+    <form class="modal-content">
+      <div class="container">
+        
+        <header>
+          <h1>Delete Account</h1>
+        </header>
+        <main>
+          <p>Are you sure you want to delete your account?</p>
+        </main>
+        <footer>
+          <div class="clearfix">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+              class="cancelbtn">Cancel</button>
+            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+              class="deletebtn">Delete</button>
+          </div>
+
+        </footer>
+
+      </div>
+    </form>
+  </div>
+
+
+</body>
+
+</html>
